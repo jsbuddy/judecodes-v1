@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root.light {
+  --app-background: linear-gradient(to bottom right, #00bcd4, #1a2461);
+  --body-background: #fff;
+
+  --accent-color: steelblue;
+  --accent-color-light: #DAE6F0;
+
+  --text-color: #282c34;
+
+  --button-background: #DAE6F0;
+  --button-background-hover: #e2eef8;
+
+  --line-color: rgba(0, 0, 0, .1);
+  --line-color-deep: rgba(0, 0, 0, .05);
+}
+
+:root.dark {
+  --app-background: linear-gradient(to bottom right, #1a1a1f, #111114);
+  --body-background: #27272f;
+
+  --accent-color: #2470c2;
+  --accent-color-light: #474751;
+
+  --text-color: #cfcfd1;
+
+  --button-background: rgba(36, 112, 194, 0.21);
+  --button-background-hover: rgba(36, 112, 194, 0.11);
+
+  --line-color: rgba(255, 255, 255, .02);
+  --line-color-deep: rgba(255, 255, 255, .05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: middle;
+  outline: none;
+}
+
+html {
+    font-family: 'Poppins', Consolas, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  overflow-y: auto;
+}
+
+body::after {
+  background-image: var(--app-background);
+  background-repeat: no-repeat;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}

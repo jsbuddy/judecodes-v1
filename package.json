@@ -7,9 +7,18 @@
     "@types/node": "11.10.5",
     "@types/react": "16.8.7",
     "@types/react-dom": "16.8.2",
+    "axios": "^0.18.0",
+    "nodemailer": "^5.1.1",
     "react": "^16.8.4",
+    "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.8.4",
+    "react-icons": "^3.5.0",
+    "react-responsive": "^6.1.1",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.8",
+    "react-transition-group": "^2.6.0",
+    "react-typed": "^1.1.0",
+    "simplebar-react": "^0.1.4",
     "typescript": "3.3.3333"
   },
   "scripts": {
@@ -26,5 +35,12 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@types/react-addons-css-transition-group": "^15.0.5",
+    "@types/react-responsive": "^3.0.3",
+    "@types/react-router-dom": "^4.3.1",
+    "netlify-lambda": "^1.4.2",
+    "node-sass": "^4.11.0"
+  }
 }
