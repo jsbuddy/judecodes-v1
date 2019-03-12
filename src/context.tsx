@@ -30,21 +30,21 @@ const AppContext = createContext({
                 date: '2018 - Present',
                 title: 'Software Developer',
                 subtitle: 'Creditclan Tech Limited',
-                details: 'Design, build, and maintain company\'s web and mobile services.'
+                details: 'Develop and implement new software programs, Maintain and improve the performance of existing software, Recommend improvements to existing software programs as necessary'
             },
             {
                 present: false,
                 date: '2016 - 2018',
-                title: 'Web Designer',
+                title: 'Junior Web Designer',
                 subtitle: 'Le Citoyen University',
-                details: 'Design, build, and maintain web sites.'
+                details: 'Design, build, and maintain web sites using authoring or scripting languages, content creation tools, management tools, and digital media'
             },
             {
                 present: false,
-                date: '07.2017 - 10.2017',
+                date: '06.2017 - 10.2017',
                 title: 'Web Designer Intern',
                 subtitle: 'Trussnet Limited',
-                details: 'Perform or direct web site updates.'
+                details: 'Perform or direct web site updates, Back up files from web sites to local directories for instant recovery in case of problems.'
             },
         ],
         education: [
