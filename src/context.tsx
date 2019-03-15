@@ -76,6 +76,7 @@ const AppContext = createContext({
             {title: 'Vue', rate: 60},
             {title: 'React Native', rate: 40},
             {title: 'Flutter', rate: 70},
+            {title: 'Git', rate: 80}
         ],
         design: [
             {title: 'CorelDraw', rate: 90},
