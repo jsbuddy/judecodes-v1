@@ -70,6 +70,7 @@ const AppContext = createContext({
             {title: 'Javascript', rate: 85},
             {title: 'PHP / MySQL', rate: 30},
             {title: 'NodeJS / Express', rate: 80},
+            {title: 'GraphQL', rate: 40},
             {title: 'MongoDB', rate: 80},
             {title: 'React', rate: 80},
             {title: 'Angular', rate: 70},
