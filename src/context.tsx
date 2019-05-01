@@ -127,6 +127,18 @@ const AppContext = createContext({
                 image: './assets/images/portfolio/web/pricebuddy.jpg',
                 link: 'https://pricebuddie.herokuapp.com'
             },
+            {
+                category: 'web',
+                title: 'Estam University',
+                image: './assets/images/portfolio/web/estam.jpg',
+                link: 'https://estamuni.net'
+            },
+            {
+                category: 'web',
+                title: 'Votes Hub',
+                image: './assets/images/portfolio/web/voteshub.jpg',
+                link: 'https://voteshub.herokuapp.com'
+            },
         ]
     }
 });
