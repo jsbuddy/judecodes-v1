@@ -1,6 +1,6 @@
-import {createContext} from 'react';
+import { createContext } from 'react';
 import React from "react";
-import {FiCode, FiStar} from "react-icons/fi";
+import { FiCode, FiStar } from "react-icons/fi";
 
 const AppContext = createContext({
     name: 'Francis Jude',
@@ -66,24 +66,24 @@ const AppContext = createContext({
     },
     skills: {
         code: [
-            {title: 'HTML5 / CSS3', rate: 90},
-            {title: 'Javascript', rate: 85},
-            {title: 'PHP / MySQL', rate: 30},
-            {title: 'NodeJS / Express', rate: 80},
-            {title: 'GraphQL', rate: 40},
-            {title: 'MongoDB', rate: 80},
-            {title: 'React', rate: 80},
-            {title: 'Angular', rate: 70},
-            {title: 'Vue', rate: 60},
-            {title: 'React Native', rate: 40},
-            {title: 'Flutter', rate: 70},
-            {title: 'Git', rate: 80}
+            { title: 'HTML5 / CSS3', rate: 90 },
+            { title: 'Javascript', rate: 85 },
+            { title: 'PHP / MySQL', rate: 30 },
+            { title: 'NodeJS / Express', rate: 80 },
+            { title: 'GraphQL', rate: 40 },
+            { title: 'MongoDB', rate: 80 },
+            { title: 'React', rate: 80 },
+            { title: 'Angular', rate: 70 },
+            { title: 'Vue', rate: 60 },
+            { title: 'React Native', rate: 40 },
+            { title: 'Flutter', rate: 70 },
+            { title: 'Git', rate: 80 }
         ],
         design: [
-            {title: 'CorelDraw', rate: 90},
-            {title: 'Adobe Illustrator', rate: 50},
-            {title: 'Adobe Photoshop', rate: 40},
-            {title: 'Adobe XD', rate: 80},
+            { title: 'CorelDraw', rate: 90 },
+            { title: 'Adobe Illustrator', rate: 50 },
+            { title: 'Adobe Photoshop', rate: 40 },
+            { title: 'Adobe XD', rate: 80 },
         ]
     },
     tags: [
@@ -97,18 +97,42 @@ const AppContext = createContext({
         {
             title: 'Web Development',
             description: `Modern and mobile-ready website that will help you reach all of your marketing.`,
-            icon: <FiCode/>,
+            icon: <FiCode />,
         },
         {
             title: 'Graphic Design',
             description: `From simple flyers, banners to complicated Illustrations for your projects`,
-            icon: <FiStar/>,
+            icon: <FiStar />,
         }
     ],
     portfolio: {
         loaded: false,
         external: [],
         local: [
+            {
+                category: 'web',
+                title: 'Taximoni',
+                image: './assets/images/portfolio/web/taximoni.jpg',
+                link: 'https://taximoni.netlify.com'
+            },
+            {
+                category: 'web',
+                title: 'Votes Hub',
+                image: './assets/images/portfolio/web/voteshub.jpg',
+                link: 'https://voteshub.herokuapp.com'
+            },
+            {
+                category: 'web',
+                title: 'Estam University',
+                image: './assets/images/portfolio/web/estam.jpg',
+                link: 'https://estamuni.net'
+            },
+            {
+                category: 'web',
+                title: 'Pricebuddy',
+                image: './assets/images/portfolio/web/pricebuddy.jpg',
+                link: 'https://pricebuddie.herokuapp.com'
+            },
             {
                 category: 'web',
                 title: 'Achiv',
@@ -120,24 +144,6 @@ const AppContext = createContext({
                 title: 'Le Citoyen University',
                 image: './assets/images/portfolio/web/lcu.jpg',
                 link: 'http://lecitoyenuniversity.com'
-            },
-            {
-                category: 'web',
-                title: 'Pricebuddy',
-                image: './assets/images/portfolio/web/pricebuddy.jpg',
-                link: 'https://pricebuddie.herokuapp.com'
-            },
-            {
-                category: 'web',
-                title: 'Estam University',
-                image: './assets/images/portfolio/web/estam.jpg',
-                link: 'https://estamuni.net'
-            },
-            {
-                category: 'web',
-                title: 'Votes Hub',
-                image: './assets/images/portfolio/web/voteshub.jpg',
-                link: 'https://voteshub.herokuapp.com'
             },
         ]
     }
