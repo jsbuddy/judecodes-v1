@@ -113,7 +113,7 @@ const AppContext = createContext({
                 category: 'web',
                 title: 'Taximoni',
                 image: './assets/images/portfolio/web/taximoni.jpg',
-                link: 'https://taximoni.netlify.com'
+                link: 'https://taximoni.com'
             },
             {
                 category: 'web',
