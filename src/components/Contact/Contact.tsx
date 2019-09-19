@@ -1,6 +1,6 @@
-import React, {useContext, useState} from 'react';
+import React, { useContext, useState } from 'react';
 import * as axios from 'axios';
-import {FiCheck, FiSend, FiX} from 'react-icons/fi'
+import { FiCheck, FiSend, FiX } from 'react-icons/fi'
 import AppContext from "../../context";
 
 function Contact() {
@@ -9,16 +9,17 @@ function Contact() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [sending, setSending] = useState(false);
-    const [btnText, setBtnText] = useState(<span><span>Send message <span
-        className="icon"><FiSend/></span></span></span>);
+    const [btnText, setBtnText] = useState(
+        <span><span>Send message <span className="icon"><FiSend /></span></span></span>
+    );
 
     const reset = () => {
-        setBtnText(<span><span>Send message <span className="icon"><FiSend/></span></span></span>)
+        setBtnText(<span><span>Send message <span className="icon"><FiSend /></span></span></span>)
     };
 
     const start = () => {
         setSending(true);
-        setBtnText(<span>Sending.. <span className="icon sending-animation"><FiSend/></span></span>);
+        setBtnText(<span>Sending.. <span className="icon sending-animation"><FiSend /></span></span>);
     };
 
     const sent = () => {
@@ -26,13 +27,13 @@ function Contact() {
         setName('');
         setEmail('');
         setMessage('');
-        setBtnText(<span>Message sent <span className="icon"><FiCheck/></span></span>);
+        setBtnText(<span>Message sent <span className="icon"><FiCheck /></span></span>);
         setTimeout(() => reset(), 3000)
     };
 
     const notsent = () => {
         setSending(false);
-        setBtnText(<span>Not Sent <span className="icon"><FiX/></span></span>);
+        setBtnText(<span>Not Sent <span className="icon"><FiX /></span></span>);
         setTimeout(() => reset(), 3000)
     };
 
@@ -44,7 +45,7 @@ function Contact() {
                 // @ts-ignore
                 const res = await axios({
                     url: '/.netlify/functions/message', method: 'POST',
-                    data: JSON.stringify({name, email, message}),
+                    data: JSON.stringify({ name, email, message }),
                 });
                 if (res.data.success) sent();
                 else notsent();
@@ -95,26 +96,26 @@ function Contact() {
                             <div>
                                 <label className="input-wrap">
                                     <input type="text" name='name' placeholder={' '} value={name}
-                                           onChange={e => setName(e.target.value)} disabled={sending} required/>
+                                        onChange={e => setName(e.target.value)} disabled={sending} required />
                                     <span className='label'>Full Name</span>
-                                    <span className="box"/>
+                                    <span className="box" />
                                 </label>
                             </div>
                             <div>
                                 <label className="input-wrap">
                                     <input type="email" name='email' placeholder={' '} value={email}
-                                           onChange={e => setEmail(e.target.value)} disabled={sending} required/>
+                                        onChange={e => setEmail(e.target.value)} disabled={sending} required />
                                     <span className='label'>Email address</span>
-                                    <span className="box"/>
+                                    <span className="box" />
                                 </label>
                             </div>
                         </div>
                         <div className="mt-4">
                             <label className="input-wrap">
                                 <textarea name="message" cols={30} rows={30} placeholder={' '} value={message}
-                                          onChange={e => setMessage(e.target.value)} disabled={sending} required/>
+                                    onChange={e => setMessage(e.target.value)} disabled={sending} required />
                                 <span className='label'>Message</span>
-                                <span className="box"/>
+                                <span className="box" />
                             </label>
                         </div>
                         <div className="mt-5">

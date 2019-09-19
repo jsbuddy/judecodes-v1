@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import AppContext from "../../context";
 
@@ -15,7 +15,7 @@ function Portfolio() {
             context.portfolio.loaded = true;
             setLoading(false);
         } catch (e) {
-            console.dir({e});
+            console.dir({ e });
             setLoading(false);
         }
     };
@@ -31,13 +31,11 @@ function Portfolio() {
                     <h3 className='section-title'><span className="colored">P</span>ortfolio</h3>
                     <div className="portfolio-links flex-1">
                         <a onClick={() => setVisible('all')}
-                           className={`${visible === 'all' && 'active'}`}>All</a>
+                            className={`${visible === 'all' && 'active'}`}>All</a>
                         <a onClick={() => setVisible('graphic')}
-                           className={`${visible === 'graphic' && 'active'}`}>Graphic</a>
+                            className={`${visible === 'graphic' && 'active'}`}>Graphic</a>
                         <a onClick={() => setVisible('web')}
-                           className={`${visible === 'web' && 'active'}`}>Web</a>
-                        {/*<a onClick={() => setVisible('mobile')}*/}
-                        {/*className={`${visible === 'mobile' && 'active'}`}>Mobile</a>*/}
+                            className={`${visible === 'web' && 'active'}`}>Web</a>
                     </div>
                 </div>
                 <div className='section-body'>
@@ -54,15 +52,9 @@ function Portfolio() {
                         }
                         {
                             loading && <div className='loader'>
-							  <div className='indicator'/>
-							</div>
+                                <div className='indicator' />
+                            </div>
                         }
-                    </div>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <div className="text-center">
-                        <p className="text-raised text-sm message">Visit here more often to see more awesome stuff I build.</p>
                     </div>
                 </div>
             </section>
@@ -89,7 +81,7 @@ interface IBehanceProjectItem {
 const PortfolioItem = (item: IPortfolioItem) => (
     <a className="portfolio-item" key={item.title} href={item.link} target='_blank'>
         <div className="img-wrap">
-            <img src={item.image} alt=""/>
+            <img src={item.image} alt="" />
         </div>
         <div className="title">{item.title}</div>
         <div className="subtitle">{item.category}</div>
@@ -100,7 +92,7 @@ const BehanceProjectItem = (item: IBehanceProjectItem) => {
     return (
         <a className='portfolio-item' key={item.id} href={item.url} target='_blank'>
             <div className="img-wrap">
-                <img src={item.covers[230]} alt="Item"/>
+                <img src={item.covers[230]} alt="Item" />
             </div>
             <div className="title">{item.name}</div>
             <div className="subtitle">Graphic</div>

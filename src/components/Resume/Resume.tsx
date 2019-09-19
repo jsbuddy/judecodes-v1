@@ -1,17 +1,17 @@
-import React, {useContext} from 'react';
-import {IoIosAnalytics, IoIosBriefcase, IoIosCode, IoIosSchool} from 'react-icons/io';
+import React, { useContext } from 'react';
+import { IoIosAnalytics, IoIosBriefcase, IoIosCode, IoIosSchool } from 'react-icons/io';
 import AppContext from "../../context";
 
 function Resume() {
     const context = useContext(AppContext);
 
     return (
-        <div>
+        <>
             <section className="section">
                 <h3 className="section-title"><span className='colored'>R</span>esume</h3>
                 <div className="section-body double-column">
                     <section className='subsection'>
-                        <h4 className='subsection-title'><span className="icon"><IoIosSchool/></span> Education</h4>
+                        <h4 className='subsection-title'><span className="icon"><IoIosSchool /></span> Education</h4>
                         <div className="subsection-body">
                             <div className="resume-items">
                                 {
@@ -21,7 +21,7 @@ function Resume() {
                         </div>
                     </section>
                     <section className='subsection'>
-                        <h4 className='subsection-title'><span className="icon"><IoIosBriefcase/></span> Experience</h4>
+                        <h4 className='subsection-title'><span className="icon"><IoIosBriefcase /></span> Experience</h4>
                         <div className="subsection-body">
                             <div className="resume-items">
                                 {
@@ -37,7 +37,7 @@ function Resume() {
                 <div className="section-body double-column">
                     <div>
                         <section className='subsection'>
-                            <h4 className='subsection-title'><span className="icon"><IoIosCode/></span> Code</h4>
+                            <h4 className='subsection-title'><span className="icon"><IoIosCode /></span> Code</h4>
                             <div className="subsection-body">
                                 {
                                     context.skills.code.map(code => SkillItem(code))
@@ -47,7 +47,7 @@ function Resume() {
                     </div>
                     <div>
                         <section className='subsection'>
-                            <h4 className='subsection-title'><span className="icon"><IoIosAnalytics/></span> Design</h4>
+                            <h4 className='subsection-title'><span className="icon"><IoIosAnalytics /></span> Design</h4>
                             <div className="subsection-body">
                                 {
                                     context.skills.design.map(design => SkillItem(design))
@@ -57,7 +57,7 @@ function Resume() {
                     </div>
                 </div>
             </section>
-        </div>
+        </>
     );
 }
 
@@ -90,7 +90,7 @@ const SkillItem = (item: ISkillItem) => (
     <div className="skill" key={item.title}>
         <div className="skill-title">{item.title}</div>
         <div className="progress">
-            <div className="indicator" style={{width: `${item.rate}%`}}/>
+            <div className="indicator" style={{ width: `${item.rate}%` }} />
         </div>
     </div>
 );

@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import AppContext from '../../context';
 
 
@@ -11,13 +11,13 @@ function About() {
     const age: number = Math.floor(ms / (24 * 60 * 60 * 1000) / 365);
 
     return (
-        <div>
+        <>
             <section className='section'>
                 <h3 className='section-title'><span className="colored">About</span> Me</h3>
                 <div className='section-body double-column'>
                     <div>
                         <p className='text-raised'>
-                            <span className="text-bold">Hello, I'm {context.name}</span><br/>
+                            <span className="text-bold">Hello, I'm {context.name}</span><br />
                             {context.about}
                         </p>
                     </div>
@@ -46,16 +46,16 @@ function About() {
                         {
                             context.services.map(service => (
                                 <div className="service-item" key={service.title}>
-                                    <span className="icon">{ service.icon }</span>
-                                    <h4 className="title">{ service.title }</h4>
-                                    <p className="description">{ service.description }</p>
+                                    <span className="icon">{service.icon}</span>
+                                    <h4 className="title">{service.title}</h4>
+                                    <p className="description">{service.description}</p>
                                 </div>
                             ))
                         }
                     </div>
                 </div>
             </section>
-        </div>
+        </>
     );
 }
 

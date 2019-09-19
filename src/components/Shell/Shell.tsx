@@ -7,7 +7,7 @@ import 'simplebar/dist/simplebar.min.css';
 
 const Shell = (Content: any) =>
     (props: any) => (
-        <React.Fragment>
+        <>
             <MediaQuery maxDeviceWidth={1240}>
                 <div className={'outlet'}>
                     <ReactCSSTransitionGroup
@@ -17,12 +17,12 @@ const Shell = (Content: any) =>
                         transitionLeaveTimeout={200}
                         transitionName={'SlideIn'}
                     >
-                        <Content {...props}/>
+                        <Content {...props} />
                     </ReactCSSTransitionGroup>
                 </div>
             </MediaQuery>
             <MediaQuery minDeviceWidth={1240}>
-                <SimpleBar className={'outlet'} style={{height: '580px'}}>
+                <SimpleBar className={'outlet'} style={{ height: '580px' }}>
                     <ReactCSSTransitionGroup
                         transitionAppear={true}
                         transitionAppearTimeout={300}
@@ -30,11 +30,11 @@ const Shell = (Content: any) =>
                         transitionLeaveTimeout={200}
                         transitionName={'SlideIn'}
                     >
-                        <Content {...props}/>
+                        <Content {...props} />
                     </ReactCSSTransitionGroup>
                 </SimpleBar>
             </MediaQuery>
-        </React.Fragment>
+        </>
     );
 
 export default Shell;
