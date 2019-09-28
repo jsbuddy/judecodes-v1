@@ -45,7 +45,7 @@ function Contact() {
                 // @ts-ignore
                 const res = await axios({
                     url: '/.netlify/functions/message', method: 'POST',
-                    data: JSON.stringify({ name, email, message }),
+                    data: JSON.stringify({ name, email, message, to: 'judecodes@gmail.com' }),
                 });
                 if (res.data.success) sent();
                 else notsent();
