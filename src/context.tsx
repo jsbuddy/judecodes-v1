@@ -22,7 +22,7 @@ const AppContext = createContext({
     },
     avatar: './assets/images/avatar.jpg',
     cover: './assets/images/profile-bg.jpeg',
-    cv: './assets/documents/resume.docx',
+    cv: './assets/documents/resume.pdf',
     resume: {
         experience: [
             {
