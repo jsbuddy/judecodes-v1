@@ -11,7 +11,7 @@ const AppContext = createContext({
         country: 'Nigeria',
     },
     phone: '+2347066198768',
-    email: 'judecodes@yahoo.com',
+    email: 'judecodes@gmail.com',
     social: {
         facebook: 'https://www.facebook.com/judecodes',
         twitter: 'https://www.twitter.com/judecodes',
@@ -26,7 +26,7 @@ const AppContext = createContext({
     resume: {
         experience: [
             {
-                present: false,
+                present: true,
                 date: '2018 - 2019',
                 title: 'Software Developer',
                 subtitle: 'Creditclan Tech Limited',
@@ -68,10 +68,9 @@ const AppContext = createContext({
         code: [
             { title: 'HTML5 / CSS3', rate: 90 },
             { title: 'Javascript', rate: 85 },
-            { title: 'PHP / MySQL', rate: 30 },
-            { title: 'NodeJS / Express', rate: 80 },
-            { title: 'GraphQL', rate: 40 },
-            { title: 'MongoDB', rate: 80 },
+            { title: 'NodeJS / Express', rate: 70 },
+            { title: 'GraphQL', rate: 60 },
+            { title: 'MongoDB', rate: 70 },
             { title: 'React', rate: 80 },
             { title: 'Angular', rate: 70 },
             { title: 'Vue', rate: 60 },
@@ -80,10 +79,11 @@ const AppContext = createContext({
             { title: 'Git', rate: 80 }
         ],
         design: [
-            { title: 'CorelDraw', rate: 90 },
+            { title: 'Figma', rate: 70 },
+            { title: 'Adobe XD', rate: 50 },
             { title: 'Adobe Illustrator', rate: 50 },
             { title: 'Adobe Photoshop', rate: 40 },
-            { title: 'Adobe XD', rate: 80 },
+            { title: 'CorelDraw', rate: 70 },
         ]
     },
     tags: [
