@@ -27,7 +27,7 @@ const AppContext = createContext({
         experience: [
             {
                 present: true,
-                date: '2018 - 2019',
+                date: '2018 - 2020',
                 title: 'Software Developer',
                 subtitle: 'Creditclan Tech Limited',
                 details: 'Develop and implement new software programs, Maintain and improve the performance of existing software, Recommend improvements to existing software programs as necessary'
